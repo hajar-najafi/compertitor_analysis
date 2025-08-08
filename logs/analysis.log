@@ -1,0 +1,545 @@
+{"level":"info","message":"Setup test - logger is working","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:52:47"}
+{"level":"info","message":"Scheduler configured for: 0 9 * * 3 (Europe/Rome)","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:52:51"}
+{"level":"info","message":"Competitors Analysis Agent started on port 3000","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:52:51"}
+{"level":"info","message":"Environment: development","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:52:51"}
+{"level":"info","message":"Schedule: 0 9 * * 3 (Europe/Rome)","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:52:51"}
+{"level":"info","message":"Next run: Wed Aug 13 2025 09:00:00 GMT+0200 (Central European Summer Time)","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:52:51"}
+{"level":"info","message":"Health check: http://localhost:3000/health","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:52:51"}
+{"level":"info","message":"Dashboard: http://localhost:3000/dashboard","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:52:51"}
+{"duration":3,"endpoint":"/health","level":"info","message":"GET /health - 200 (3ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 15:52:59","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 200 (1ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 15:53:07","type":"api"}
+{"level":"info","message":"Manual analysis triggered via API","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:53:11"}
+{"level":"info","message":"Starting competitors analysis","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:53:11"}
+{"level":"info","message":"Loaded 3 competitors for analysis","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:53:11"}
+{"level":"info","message":"Starting website monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:53:11"}
+{"level":"info","message":"Starting website monitoring for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:53:11"}
+{"competitor":"Web Agency Milano","level":"info","message":"Starting website monitoring for https://webagencymilano.it","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:53:11","type":"competitor"}
+{"level":"info","message":"Scheduler configured for: 0 9 * * 3 (Europe/Rome)","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:53:34"}
+{"level":"info","message":"Competitors Analysis Agent started on port 3000","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:53:34"}
+{"level":"info","message":"Environment: development","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:53:34"}
+{"level":"info","message":"Schedule: 0 9 * * 3 (Europe/Rome)","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:53:34"}
+{"level":"info","message":"Next run: Wed Aug 13 2025 09:00:00 GMT+0200 (Central European Summer Time)","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:53:34"}
+{"level":"info","message":"Health check: http://localhost:3000/health","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:53:34"}
+{"level":"info","message":"Dashboard: http://localhost:3000/dashboard","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:53:34"}
+{"duration":4,"endpoint":"/health","level":"info","message":"GET /health - 200 (4ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 15:53:42","type":"api"}
+{"duration":8,"endpoint":"/dashboard","level":"info","message":"GET /dashboard - 200 (8ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 15:54:06","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 200 (2ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 15:54:06","type":"api"}
+{"duration":1,"endpoint":"/competitors","level":"info","message":"GET /competitors - 200 (1ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 15:54:06","type":"api"}
+{"duration":4,"endpoint":"/reports","level":"info","message":"GET /reports - 200 (4ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 15:54:06","type":"api"}
+{"duration":3,"endpoint":"/favicon.ico","level":"info","message":"GET /favicon.ico - 404 (3ms)","method":"GET","service":"competitors-analysis-agent","status":404,"timestamp":"2025-08-07 15:54:06","type":"api"}
+{"duration":2,"endpoint":"/reports","level":"info","message":"GET /reports - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 15:54:14","type":"api"}
+{"level":"info","message":"Manual analysis triggered via API","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:54:23"}
+{"level":"info","message":"Starting competitors analysis","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:54:23"}
+{"level":"info","message":"Loaded 3 competitors for analysis","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:54:23"}
+{"level":"info","message":"Starting website monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:54:23"}
+{"level":"info","message":"Starting website monitoring for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:54:23"}
+{"competitor":"Web Agency Milano","level":"info","message":"Starting website monitoring for https://webagencymilano.it","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:54:23","type":"competitor"}
+{"level":"info","message":"Scheduler configured for: 0 9 * * 3 (Europe/Rome)","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:56:59"}
+{"level":"info","message":"Competitors Analysis Agent started on port 3000","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:56:59"}
+{"level":"info","message":"Environment: development","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:56:59"}
+{"level":"info","message":"Schedule: 0 9 * * 3 (Europe/Rome)","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:56:59"}
+{"level":"info","message":"Next run: Wed Aug 13 2025 09:00:00 GMT+0200 (Central European Summer Time)","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:56:59"}
+{"level":"info","message":"Health check: http://localhost:3000/health","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:56:59"}
+{"level":"info","message":"Dashboard: http://localhost:3000/dashboard","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:56:59"}
+{"duration":3,"endpoint":"/dashboard","level":"info","message":"GET /dashboard - 304 (3ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 15:57:00","type":"api"}
+{"duration":8,"endpoint":"/status","level":"info","message":"GET /status - 304 (8ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 15:57:01","type":"api"}
+{"duration":1,"endpoint":"/reports","level":"info","message":"GET /reports - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 15:57:01","type":"api"}
+{"duration":1,"endpoint":"/competitors","level":"info","message":"GET /competitors - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 15:57:01","type":"api"}
+{"level":"info","message":"Scheduler configured for: 0 9 * * 3 (Europe/Rome)","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:05"}
+{"level":"info","message":"Competitors Analysis Agent started on port 3000","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:05"}
+{"level":"info","message":"Environment: development","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:05"}
+{"level":"info","message":"Schedule: 0 9 * * 3 (Europe/Rome)","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:05"}
+{"level":"info","message":"Next run: Wed Aug 13 2025 09:00:00 GMT+0200 (Central European Summer Time)","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:05"}
+{"level":"info","message":"Health check: http://localhost:3000/health","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:05"}
+{"level":"info","message":"Dashboard: http://localhost:3000/dashboard","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:05"}
+{"level":"info","message":"Scheduler configured for: 0 9 * * 3 (Europe/Rome)","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:09"}
+{"level":"info","message":"Competitors Analysis Agent started on port 3000","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:09"}
+{"level":"info","message":"Environment: development","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:09"}
+{"level":"info","message":"Schedule: 0 9 * * 3 (Europe/Rome)","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:09"}
+{"level":"info","message":"Next run: Wed Aug 13 2025 09:00:00 GMT+0200 (Central European Summer Time)","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:09"}
+{"level":"info","message":"Health check: http://localhost:3000/health","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:09"}
+{"level":"info","message":"Dashboard: http://localhost:3000/dashboard","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:09"}
+{"level":"info","message":"Scheduler configured for: 0 9 * * 3 (Europe/Rome)","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:11"}
+{"level":"info","message":"Competitors Analysis Agent started on port 3000","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:11"}
+{"level":"info","message":"Environment: development","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:11"}
+{"level":"info","message":"Schedule: 0 9 * * 3 (Europe/Rome)","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:11"}
+{"level":"info","message":"Next run: Wed Aug 13 2025 09:00:00 GMT+0200 (Central European Summer Time)","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:11"}
+{"level":"info","message":"Health check: http://localhost:3000/health","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:11"}
+{"level":"info","message":"Dashboard: http://localhost:3000/dashboard","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:11"}
+{"duration":3,"endpoint":"/dashboard","level":"info","message":"GET /dashboard - 304 (3ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 15:57:17","type":"api"}
+{"duration":5,"endpoint":"/status","level":"info","message":"GET /status - 304 (5ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 15:57:17","type":"api"}
+{"duration":1,"endpoint":"/competitors","level":"info","message":"GET /competitors - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 15:57:17","type":"api"}
+{"duration":1,"endpoint":"/reports","level":"info","message":"GET /reports - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 15:57:17","type":"api"}
+{"duration":2,"endpoint":"/health","level":"info","message":"GET /health - 200 (2ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 15:57:22","type":"api"}
+{"duration":3,"endpoint":"/dashboard","level":"info","message":"GET /dashboard - 200 (3ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 15:57:36","type":"api"}
+{"level":"info","message":"Scheduler configured for: 0 9 * * 3 (Europe/Rome)","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:47"}
+{"level":"info","message":"Competitors Analysis Agent started on port 3000","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:47"}
+{"level":"info","message":"Environment: development","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:47"}
+{"level":"info","message":"Schedule: 0 9 * * 3 (Europe/Rome)","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:47"}
+{"level":"info","message":"Next run: Wed Aug 13 2025 09:00:00 GMT+0200 (Central European Summer Time)","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:47"}
+{"level":"info","message":"Health check: http://localhost:3000/health","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:47"}
+{"level":"info","message":"Dashboard: http://localhost:3000/dashboard","service":"competitors-analysis-agent","timestamp":"2025-08-07 15:57:47"}
+{"duration":6,"endpoint":"/status","level":"info","message":"GET /status - 304 (6ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 15:57:48","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 15:58:18","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 15:58:48","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 15:59:17","type":"api"}
+{"duration":22,"endpoint":"/status","level":"info","message":"GET /status - 304 (22ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 15:59:48","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:00:18","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:00:48","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:01:55","type":"api"}
+{"duration":10,"endpoint":"/status","level":"info","message":"GET /status - 304 (10ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:02:32","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:02:48","type":"api"}
+{"duration":5,"endpoint":"/status","level":"info","message":"GET /status - 304 (5ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:03:18","type":"api"}
+{"duration":4,"endpoint":"/status","level":"info","message":"GET /status - 304 (4ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:03:55","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:04:55","type":"api"}
+{"duration":14,"endpoint":"/status","level":"info","message":"GET /status - 304 (14ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:05:55","type":"api"}
+{"duration":3,"endpoint":"/status","level":"info","message":"GET /status - 304 (3ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:06:55","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:07:55","type":"api"}
+{"duration":10,"endpoint":"/status","level":"info","message":"GET /status - 304 (10ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:08:18","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:08:48","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:09:55","type":"api"}
+{"duration":8,"endpoint":"/status","level":"info","message":"GET /status - 304 (8ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:10:55","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:11:55","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:12:55","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:13:55","type":"api"}
+{"duration":8,"endpoint":"/status","level":"info","message":"GET /status - 304 (8ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:14:55","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:15:55","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:16:47","type":"api"}
+{"duration":16,"endpoint":"/dashboard","level":"info","message":"GET /dashboard - 304 (16ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:16:48","type":"api"}
+{"duration":4,"endpoint":"/status","level":"info","message":"GET /status - 304 (4ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:16:48","type":"api"}
+{"duration":1,"endpoint":"/competitors","level":"info","message":"GET /competitors - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:16:48","type":"api"}
+{"duration":7,"endpoint":"/reports","level":"info","message":"GET /reports - 304 (7ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:16:48","type":"api"}
+{"duration":1,"endpoint":"/dashboard","level":"info","message":"GET /dashboard - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:16:49","type":"api"}
+{"duration":0,"endpoint":"/status","level":"info","message":"GET /status - 304 (0ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:16:49","type":"api"}
+{"duration":2,"endpoint":"/competitors","level":"info","message":"GET /competitors - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:16:49","type":"api"}
+{"duration":3,"endpoint":"/reports","level":"info","message":"GET /reports - 304 (3ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:16:49","type":"api"}
+{"level":"info","message":"Manual analysis triggered via API","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:17:07"}
+{"level":"info","message":"Starting competitors analysis","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:17:07"}
+{"level":"info","message":"Loaded 3 competitors for analysis","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:17:07"}
+{"level":"info","message":"Starting website monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:17:07"}
+{"level":"info","message":"Starting website monitoring for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:17:07"}
+{"competitor":"Web Agency Milano","level":"info","message":"Starting website monitoring for https://webagencymilano.it","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:17:07","type":"competitor"}
+{"error":"socket hang up","level":"error","message":"Website monitoring failed for Web Agency Milano","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:17:10"}
+{"competitor":"Digital Studio Roma","level":"info","message":"Starting website monitoring for https://digitalstudioroma.com","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:17:12","type":"competitor"}
+{"error":"socket hang up","level":"error","message":"Website monitoring failed for Digital Studio Roma","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:17:13"}
+{"competitor":"Tech Solutions Napoli","level":"info","message":"Starting website monitoring for https://techsolutionsnapoli.it","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:17:15","type":"competitor"}
+{"error":"Failed to launch the browser process!\n[16387:259:0807/161715.221864:ERROR:policy_logger.cc(156)] :components/enterprise/browser/controller/chrome_browser_cloud_management_controller.cc(161) Cloud management controller initialization aborted as CBCM is not enabled. Please use the `--enable-chrome-browser-cloud-management` command line flag to enable it if you are not using the official Google Chrome build.\n[0807/161715.538724:WARNING:in_range_cast.h(38)] value -634136515 out of range\n[0807/161715.550820:WARNING:crash_report_exception_handler.cc(235)] UniversalExceptionRaise: (os/kern) failure (5)\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n","level":"error","message":"Website monitoring failed for Tech Solutions Napoli","service":"competitors-analysis-agent","stack":"Error: Failed to launch the browser process!\n[16387:259:0807/161715.221864:ERROR:policy_logger.cc(156)] :components/enterprise/browser/controller/chrome_browser_cloud_management_controller.cc(161) Cloud management controller initialization aborted as CBCM is not enabled. Please use the `--enable-chrome-browser-cloud-management` command line flag to enable it if you are not using the official Google Chrome build.\n[0807/161715.538724:WARNING:in_range_cast.h(38)] value -634136515 out of range\n[0807/161715.550820:WARNING:crash_report_exception_handler.cc(235)] UniversalExceptionRaise: (os/kern) failure (5)\n\n\nTROUBLESHOOTING: https://pptr.dev/troubleshooting\n\n    at ChildProcess.onClose (/Users/hajar/competitors-analysis-agent/node_modules/@puppeteer/browsers/lib/cjs/launch.js:267:24)\n    at ChildProcess.emit (node:events:530:35)\n    at ChildProcess._handle.onexit (node:internal/child_process:294:12)","timestamp":"2025-08-07 16:17:15"}
+{"level":"info","message":"Website monitoring completed for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:17:17"}
+{"level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:17:17"}
+{"level":"info","message":"Starting social media monitoring for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:17:17"}
+{"competitor":"Web Agency Milano","level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:17:17","type":"competitor"}
+{"competitor":"Web Agency Milano","errors":0,"level":"info","message":"Social media monitoring completed in 2ms","platforms":["facebook","instagram","linkedin","twitter"],"service":"competitors-analysis-agent","timestamp":"2025-08-07 16:17:17","type":"competitor"}
+{"competitor":"Digital Studio Roma","level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:17:18","type":"competitor"}
+{"competitor":"Digital Studio Roma","errors":0,"level":"info","message":"Social media monitoring completed in 1ms","platforms":["facebook","instagram","linkedin","twitter"],"service":"competitors-analysis-agent","timestamp":"2025-08-07 16:17:18","type":"competitor"}
+{"duration":8,"endpoint":"/status","level":"info","message":"GET /status - 200 (8ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 16:17:19","type":"api"}
+{"competitor":"Tech Solutions Napoli","level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:17:19","type":"competitor"}
+{"competitor":"Tech Solutions Napoli","errors":0,"level":"info","message":"Social media monitoring completed in 1ms","platforms":["facebook","instagram","linkedin","twitter"],"service":"competitors-analysis-agent","timestamp":"2025-08-07 16:17:19","type":"competitor"}
+{"level":"info","message":"Social media monitoring completed for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:17:20"}
+{"level":"info","message":"Generating weekly report","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:17:20"}
+{"level":"info","message":"Starting weekly report generation","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:17:20"}
+{"level":"warn","message":"HTML template not found, creating default template","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:17:20"}
+{"files":["html"],"level":"info","message":"Weekly report generated in 41ms","reportId":"weekly-2025-08-07","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:17:20"}
+{"error":"nodemailer.createTransporter is not a function","level":"error","message":"Failed to send email report","service":"competitors-analysis-agent","stack":"TypeError: nodemailer.createTransporter is not a function\n    at CompetitorsAnalysisAgent.sendEmailReport (/Users/hajar/competitors-analysis-agent/src/index.js:261:38)\n    at CompetitorsAnalysisAgent.runAnalysis (/Users/hajar/competitors-analysis-agent/src/index.js:224:20)\n    at async /Users/hajar/competitors-analysis-agent/src/index.js:100:24","timestamp":"2025-08-07 16:17:20"}
+{"competitors":3,"level":"info","message":"Analysis completed successfully in 13340ms","reportId":"weekly-2025-08-07","service":"competitors-analysis-agent","socialPosts":217,"timestamp":"2025-08-07 16:17:20","websiteChanges":0}
+{"duration":13343,"endpoint":"/analyze","level":"info","message":"POST /analyze - 200 (13343ms)","method":"POST","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 16:17:20","type":"api"}
+{"duration":13,"endpoint":"/status","level":"info","message":"GET /status - 200 (13ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 16:17:49","type":"api"}
+{"duration":9,"endpoint":"/status","level":"info","message":"GET /status - 304 (9ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:18:19","type":"api"}
+{"duration":18,"endpoint":"/status","level":"info","message":"GET /status - 304 (18ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:18:49","type":"api"}
+{"level":"info","message":"Manual analysis triggered via API","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:01"}
+{"level":"info","message":"Starting competitors analysis","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:01"}
+{"level":"info","message":"Loaded 3 competitors for analysis","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:01"}
+{"level":"info","message":"Starting website monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:01"}
+{"level":"info","message":"Starting website monitoring for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:01"}
+{"competitor":"Web Agency Milano","level":"info","message":"Starting website monitoring for https://webagencymilano.it","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:01","type":"competitor"}
+{"error":"socket hang up","level":"error","message":"Website monitoring failed for Web Agency Milano","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:03"}
+{"competitor":"Digital Studio Roma","level":"info","message":"Starting website monitoring for https://digitalstudioroma.com","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:05","type":"competitor"}
+{"error":"socket hang up","level":"error","message":"Website monitoring failed for Digital Studio Roma","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:05"}
+{"competitor":"Tech Solutions Napoli","level":"info","message":"Starting website monitoring for https://techsolutionsnapoli.it","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:07","type":"competitor"}
+{"error":"socket hang up","level":"error","message":"Website monitoring failed for Tech Solutions Napoli","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:08"}
+{"level":"info","message":"Website monitoring completed for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:10"}
+{"level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:10"}
+{"level":"info","message":"Starting social media monitoring for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:10"}
+{"competitor":"Web Agency Milano","level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:10","type":"competitor"}
+{"competitor":"Web Agency Milano","errors":0,"level":"info","message":"Social media monitoring completed in 1ms","platforms":["facebook","instagram","linkedin","twitter"],"service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:10","type":"competitor"}
+{"competitor":"Digital Studio Roma","level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:11","type":"competitor"}
+{"competitor":"Digital Studio Roma","errors":0,"level":"info","message":"Social media monitoring completed in 1ms","platforms":["facebook","instagram","linkedin","twitter"],"service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:11","type":"competitor"}
+{"level":"info","message":"Scheduler configured for: 0 9 * * 3 (Europe/Rome)","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:12"}
+{"level":"info","message":"Competitors Analysis Agent started on port 3000","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:12"}
+{"level":"info","message":"Environment: development","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:12"}
+{"level":"info","message":"Schedule: 0 9 * * 3 (Europe/Rome)","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:12"}
+{"level":"info","message":"Next run: Wed Aug 13 2025 09:00:00 GMT+0200 (Central European Summer Time)","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:12"}
+{"level":"info","message":"Health check: http://localhost:3000/health","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:12"}
+{"level":"info","message":"Dashboard: http://localhost:3000/dashboard","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:12"}
+{"duration":3,"endpoint":"/status","level":"info","message":"GET /status - 200 (3ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 16:19:19","type":"api"}
+{"level":"info","message":"SIGTERM received, shutting down gracefully","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:20"}
+{"level":"info","message":"Scheduler configured for: 0 9 * * 3 (Europe/Rome)","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:25"}
+{"level":"info","message":"Competitors Analysis Agent started on port 3000","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:25"}
+{"level":"info","message":"Environment: development","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:25"}
+{"level":"info","message":"Schedule: 0 9 * * 3 (Europe/Rome)","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:25"}
+{"level":"info","message":"Next run: Wed Aug 13 2025 09:00:00 GMT+0200 (Central European Summer Time)","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:25"}
+{"level":"info","message":"Health check: http://localhost:3000/health","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:25"}
+{"level":"info","message":"Dashboard: http://localhost:3000/dashboard","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:25"}
+{"level":"info","message":"Manual analysis triggered via API","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:33"}
+{"level":"info","message":"Starting competitors analysis","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:33"}
+{"level":"info","message":"Loaded 3 competitors for analysis","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:33"}
+{"level":"info","message":"Starting website monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:33"}
+{"level":"info","message":"Starting website monitoring for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:33"}
+{"competitor":"Web Agency Milano","level":"info","message":"Starting website monitoring for https://webagencymilano.it","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:33","type":"competitor"}
+{"error":"socket hang up","level":"error","message":"Website monitoring failed for Web Agency Milano","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:34"}
+{"competitor":"Digital Studio Roma","level":"info","message":"Starting website monitoring for https://digitalstudioroma.com","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:36","type":"competitor"}
+{"error":"socket hang up","level":"error","message":"Website monitoring failed for Digital Studio Roma","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:37"}
+{"competitor":"Tech Solutions Napoli","level":"info","message":"Starting website monitoring for https://techsolutionsnapoli.it","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:39","type":"competitor"}
+{"error":"socket hang up","level":"error","message":"Website monitoring failed for Tech Solutions Napoli","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:39"}
+{"level":"info","message":"Website monitoring completed for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:41"}
+{"level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:41"}
+{"level":"info","message":"Starting social media monitoring for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:41"}
+{"competitor":"Web Agency Milano","level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:41","type":"competitor"}
+{"competitor":"Web Agency Milano","errors":0,"level":"info","message":"Social media monitoring completed in 3ms","platforms":["facebook","instagram","linkedin","twitter"],"service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:41","type":"competitor"}
+{"competitor":"Digital Studio Roma","level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:42","type":"competitor"}
+{"competitor":"Digital Studio Roma","errors":0,"level":"info","message":"Social media monitoring completed in 1ms","platforms":["facebook","instagram","linkedin","twitter"],"service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:42","type":"competitor"}
+{"competitor":"Tech Solutions Napoli","level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:43","type":"competitor"}
+{"competitor":"Tech Solutions Napoli","errors":0,"level":"info","message":"Social media monitoring completed in 1ms","platforms":["facebook","instagram","linkedin","twitter"],"service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:43","type":"competitor"}
+{"level":"info","message":"Social media monitoring completed for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:44"}
+{"level":"info","message":"Generating weekly report","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:44"}
+{"level":"info","message":"Starting weekly report generation","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:44"}
+{"files":["html"],"level":"info","message":"Weekly report generated in 41ms","reportId":"weekly-2025-08-07","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:44"}
+{"duration":2,"endpoint":"/dashboard","level":"info","message":"GET /dashboard - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:19:45","type":"api"}
+{"duration":3,"endpoint":"/status","level":"info","message":"GET /status - 200 (3ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 16:19:45","type":"api"}
+{"duration":5,"endpoint":"/reports","level":"info","message":"GET /reports - 200 (5ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 16:19:45","type":"api"}
+{"duration":2,"endpoint":"/competitors","level":"info","message":"GET /competitors - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:19:45","type":"api"}
+{"level":"info","message":"Email report sent successfully","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:19:46"}
+{"competitors":3,"level":"info","message":"Analysis completed successfully in 12773ms","reportId":"weekly-2025-08-07","service":"competitors-analysis-agent","socialPosts":249,"timestamp":"2025-08-07 16:19:46","websiteChanges":0}
+{"duration":12778,"endpoint":"/analyze","level":"info","message":"POST /analyze - 200 (12778ms)","method":"POST","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 16:19:46","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 200 (2ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 16:20:15","type":"api"}
+{"duration":3,"endpoint":"/status","level":"info","message":"GET /status - 304 (3ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:20:45","type":"api"}
+{"duration":3,"endpoint":"/status","level":"info","message":"GET /status - 304 (3ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:21:15","type":"api"}
+{"level":"info","message":"Manual analysis triggered via API","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:15"}
+{"level":"info","message":"Starting competitors analysis","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:15"}
+{"level":"info","message":"Loaded 3 competitors for analysis","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:15"}
+{"level":"info","message":"Starting website monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:15"}
+{"level":"info","message":"Starting website monitoring for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:15"}
+{"competitor":"Web Agency Milano","level":"info","message":"Starting website monitoring for https://webagencymilano.it","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:15","type":"competitor"}
+{"error":"socket hang up","level":"error","message":"Website monitoring failed for Web Agency Milano","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:17"}
+{"competitor":"Digital Studio Roma","level":"info","message":"Starting website monitoring for https://digitalstudioroma.com","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:19","type":"competitor"}
+{"error":"socket hang up","level":"error","message":"Website monitoring failed for Digital Studio Roma","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:19"}
+{"competitor":"Tech Solutions Napoli","level":"info","message":"Starting website monitoring for https://techsolutionsnapoli.it","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:21","type":"competitor"}
+{"error":"socket hang up","level":"error","message":"Website monitoring failed for Tech Solutions Napoli","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:22"}
+{"level":"info","message":"Website monitoring completed for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:24"}
+{"level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:24"}
+{"level":"info","message":"Starting social media monitoring for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:24"}
+{"competitor":"Web Agency Milano","level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:24","type":"competitor"}
+{"competitor":"Web Agency Milano","errors":0,"level":"info","message":"Social media monitoring completed in 1ms","platforms":["facebook","instagram","linkedin","twitter"],"service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:24","type":"competitor"}
+{"competitor":"Digital Studio Roma","level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:25","type":"competitor"}
+{"competitor":"Digital Studio Roma","errors":0,"level":"info","message":"Social media monitoring completed in 3ms","platforms":["facebook","instagram","linkedin","twitter"],"service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:25","type":"competitor"}
+{"competitor":"Tech Solutions Napoli","level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:26","type":"competitor"}
+{"competitor":"Tech Solutions Napoli","errors":0,"level":"info","message":"Social media monitoring completed in 2ms","platforms":["facebook","instagram","linkedin","twitter"],"service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:26","type":"competitor"}
+{"level":"info","message":"Social media monitoring completed for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:27"}
+{"level":"info","message":"Generating weekly report","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:27"}
+{"level":"info","message":"Starting weekly report generation","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:27"}
+{"files":["html"],"level":"info","message":"Weekly report generated in 18ms","reportId":"weekly-2025-08-07","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:27"}
+{"level":"info","message":"Email report sent successfully","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:21:28"}
+{"competitors":3,"level":"info","message":"Analysis completed successfully in 12266ms","reportId":"weekly-2025-08-07","service":"competitors-analysis-agent","socialPosts":219,"timestamp":"2025-08-07 16:21:28","websiteChanges":0}
+{"duration":12271,"endpoint":"/analyze","level":"info","message":"POST /analyze - 200 (12271ms)","method":"POST","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 16:21:28","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 200 (1ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 16:21:28","type":"api"}
+{"duration":0,"endpoint":"/status","level":"info","message":"GET /status - 304 (0ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:21:28","type":"api"}
+{"duration":0,"endpoint":"/reports","level":"info","message":"GET /reports - 200 (0ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 16:21:28","type":"api"}
+{"duration":3,"endpoint":"/reports","level":"info","message":"GET /reports - 304 (3ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:21:35","type":"api"}
+{"duration":2,"endpoint":"/dashboard","level":"info","message":"GET /dashboard - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:21:39","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:21:39","type":"api"}
+{"duration":1,"endpoint":"/reports","level":"info","message":"GET /reports - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:21:39","type":"api"}
+{"duration":1,"endpoint":"/competitors","level":"info","message":"GET /competitors - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:21:39","type":"api"}
+{"duration":1,"endpoint":"/reports","level":"info","message":"GET /reports - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:21:40","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:22:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:22:39","type":"api"}
+{"duration":3,"endpoint":"/status","level":"info","message":"GET /status - 304 (3ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:23:09","type":"api"}
+{"duration":3,"endpoint":"/status","level":"info","message":"GET /status - 304 (3ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:23:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:24:09","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:24:39","type":"api"}
+{"duration":10,"endpoint":"/status","level":"info","message":"GET /status - 304 (10ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:25:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:25:39","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:26:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:26:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:27:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:27:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:28:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:28:39","type":"api"}
+{"duration":3,"endpoint":"/status","level":"info","message":"GET /status - 304 (3ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:29:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:29:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:30:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:30:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:31:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:31:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:32:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:32:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:33:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:33:39","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:34:09","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:34:39","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:35:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:35:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:36:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:36:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:37:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:37:39","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:38:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:38:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:39:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:39:39","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:40:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:40:39","type":"api"}
+{"duration":12,"endpoint":"/status","level":"info","message":"GET /status - 304 (12ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:41:09","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:41:45","type":"api"}
+{"duration":5,"endpoint":"/reports","level":"info","message":"GET /reports - 304 (5ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:41:50","type":"api"}
+{"level":"info","message":"Manual analysis triggered via API","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:41:52"}
+{"level":"info","message":"Starting competitors analysis","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:41:52"}
+{"level":"info","message":"Loaded 3 competitors for analysis","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:41:52"}
+{"level":"info","message":"Starting website monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:41:52"}
+{"level":"info","message":"Starting website monitoring for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:41:52"}
+{"competitor":"Web Agency Milano","level":"info","message":"Starting website monitoring for https://webagencymilano.it","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:41:52","type":"competitor"}
+{"error":"socket hang up","level":"error","message":"Website monitoring failed for Web Agency Milano","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:41:54"}
+{"competitor":"Digital Studio Roma","level":"info","message":"Starting website monitoring for https://digitalstudioroma.com","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:41:56","type":"competitor"}
+{"error":"socket hang up","level":"error","message":"Website monitoring failed for Digital Studio Roma","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:41:56"}
+{"competitor":"Tech Solutions Napoli","level":"info","message":"Starting website monitoring for https://techsolutionsnapoli.it","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:41:58","type":"competitor"}
+{"error":"socket hang up","level":"error","message":"Website monitoring failed for Tech Solutions Napoli","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:41:59"}
+{"level":"info","message":"Website monitoring completed for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:42:01"}
+{"level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:42:01"}
+{"level":"info","message":"Starting social media monitoring for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:42:01"}
+{"competitor":"Web Agency Milano","level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:42:01","type":"competitor"}
+{"competitor":"Web Agency Milano","errors":0,"level":"info","message":"Social media monitoring completed in 2ms","platforms":["facebook","instagram","linkedin","twitter"],"service":"competitors-analysis-agent","timestamp":"2025-08-07 16:42:01","type":"competitor"}
+{"competitor":"Digital Studio Roma","level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:42:02","type":"competitor"}
+{"competitor":"Digital Studio Roma","errors":0,"level":"info","message":"Social media monitoring completed in 2ms","platforms":["facebook","instagram","linkedin","twitter"],"service":"competitors-analysis-agent","timestamp":"2025-08-07 16:42:02","type":"competitor"}
+{"competitor":"Tech Solutions Napoli","level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:42:03","type":"competitor"}
+{"competitor":"Tech Solutions Napoli","errors":0,"level":"info","message":"Social media monitoring completed in 3ms","platforms":["facebook","instagram","linkedin","twitter"],"service":"competitors-analysis-agent","timestamp":"2025-08-07 16:42:03","type":"competitor"}
+{"level":"info","message":"Social media monitoring completed for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:42:04"}
+{"level":"info","message":"Generating weekly report","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:42:04"}
+{"level":"info","message":"Starting weekly report generation","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:42:04"}
+{"files":["html"],"level":"info","message":"Weekly report generated in 22ms","reportId":"weekly-2025-08-07","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:42:04"}
+{"level":"info","message":"Email report sent successfully","service":"competitors-analysis-agent","timestamp":"2025-08-07 16:42:05"}
+{"competitors":3,"level":"info","message":"Analysis completed successfully in 12952ms","reportId":"weekly-2025-08-07","service":"competitors-analysis-agent","socialPosts":241,"timestamp":"2025-08-07 16:42:05","websiteChanges":0}
+{"duration":12955,"endpoint":"/analyze","level":"info","message":"POST /analyze - 200 (12955ms)","method":"POST","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 16:42:05","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 200 (1ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 16:42:05","type":"api"}
+{"duration":2,"endpoint":"/reports","level":"info","message":"GET /reports - 200 (2ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 16:42:05","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:42:05","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:42:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:42:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:43:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:43:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:44:09","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:44:39","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:45:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:45:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:46:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:46:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:47:09","type":"api"}
+{"duration":3,"endpoint":"/status","level":"info","message":"GET /status - 304 (3ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:47:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:48:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:48:39","type":"api"}
+{"duration":4,"endpoint":"/status","level":"info","message":"GET /status - 304 (4ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:49:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:49:39","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:50:09","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:50:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:51:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:51:39","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:52:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:52:39","type":"api"}
+{"duration":16,"endpoint":"/status","level":"info","message":"GET /status - 304 (16ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:53:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:53:39","type":"api"}
+{"duration":10,"endpoint":"/status","level":"info","message":"GET /status - 304 (10ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:54:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:54:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:55:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:55:39","type":"api"}
+{"duration":7,"endpoint":"/status","level":"info","message":"GET /status - 304 (7ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:56:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:56:39","type":"api"}
+{"duration":10,"endpoint":"/status","level":"info","message":"GET /status - 304 (10ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:57:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:57:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:58:09","type":"api"}
+{"duration":10,"endpoint":"/status","level":"info","message":"GET /status - 304 (10ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:58:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:59:09","type":"api"}
+{"duration":13,"endpoint":"/status","level":"info","message":"GET /status - 304 (13ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 16:59:39","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:00:09","type":"api"}
+{"duration":3,"endpoint":"/status","level":"info","message":"GET /status - 304 (3ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:00:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:01:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:01:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:02:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:02:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:03:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:03:39","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:04:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:04:39","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:05:09","type":"api"}
+{"duration":20,"endpoint":"/status","level":"info","message":"GET /status - 304 (20ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:05:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:06:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:06:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:07:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:07:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:08:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:08:39","type":"api"}
+{"duration":6,"endpoint":"/status","level":"info","message":"GET /status - 304 (6ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:09:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:09:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:10:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:10:39","type":"api"}
+{"duration":12,"endpoint":"/status","level":"info","message":"GET /status - 304 (12ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:11:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:11:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:12:09","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:12:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:13:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:13:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:14:09","type":"api"}
+{"duration":0,"endpoint":"/status","level":"info","message":"GET /status - 304 (0ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:14:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:15:09","type":"api"}
+{"duration":9,"endpoint":"/status","level":"info","message":"GET /status - 304 (9ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:15:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:16:09","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:16:55","type":"api"}
+{"duration":5,"endpoint":"/status","level":"info","message":"GET /status - 304 (5ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:17:55","type":"api"}
+{"duration":3,"endpoint":"/status","level":"info","message":"GET /status - 304 (3ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:18:55","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:19:55","type":"api"}
+{"duration":5,"endpoint":"/status","level":"info","message":"GET /status - 304 (5ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:20:55","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:21:55","type":"api"}
+{"duration":4,"endpoint":"/status","level":"info","message":"GET /status - 304 (4ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:22:55","type":"api"}
+{"duration":6,"endpoint":"/status","level":"info","message":"GET /status - 304 (6ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:23:55","type":"api"}
+{"duration":11,"endpoint":"/status","level":"info","message":"GET /status - 304 (11ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:24:55","type":"api"}
+{"duration":5,"endpoint":"/status","level":"info","message":"GET /status - 304 (5ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:25:55","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:26:55","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:27:55","type":"api"}
+{"duration":42,"endpoint":"/status","level":"info","message":"GET /status - 304 (42ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:28:55","type":"api"}
+{"duration":3,"endpoint":"/status","level":"info","message":"GET /status - 304 (3ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:29:55","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:30:55","type":"api"}
+{"duration":9,"endpoint":"/status","level":"info","message":"GET /status - 304 (9ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:31:55","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:32:38","type":"api"}
+{"level":"info","message":"Manual analysis triggered via API","service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:43"}
+{"level":"info","message":"Starting competitors analysis","service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:43"}
+{"level":"info","message":"Loaded 3 competitors for analysis","service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:43"}
+{"level":"info","message":"Starting website monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:43"}
+{"level":"info","message":"Starting website monitoring for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:43"}
+{"competitor":"Web Agency Milano","level":"info","message":"Starting website monitoring for https://webagencymilano.it","service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:43","type":"competitor"}
+{"error":"socket hang up","level":"error","message":"Website monitoring failed for Web Agency Milano","service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:44"}
+{"competitor":"Digital Studio Roma","level":"info","message":"Starting website monitoring for https://digitalstudioroma.com","service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:46","type":"competitor"}
+{"error":"socket hang up","level":"error","message":"Website monitoring failed for Digital Studio Roma","service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:47"}
+{"competitor":"Tech Solutions Napoli","level":"info","message":"Starting website monitoring for https://techsolutionsnapoli.it","service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:49","type":"competitor"}
+{"error":"socket hang up","level":"error","message":"Website monitoring failed for Tech Solutions Napoli","service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:49"}
+{"level":"info","message":"Website monitoring completed for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:51"}
+{"level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:51"}
+{"level":"info","message":"Starting social media monitoring for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:51"}
+{"competitor":"Web Agency Milano","level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:51","type":"competitor"}
+{"competitor":"Web Agency Milano","errors":0,"level":"info","message":"Social media monitoring completed in 1ms","platforms":["facebook","instagram","linkedin","twitter"],"service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:51","type":"competitor"}
+{"competitor":"Digital Studio Roma","level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:52","type":"competitor"}
+{"competitor":"Digital Studio Roma","errors":0,"level":"info","message":"Social media monitoring completed in 1ms","platforms":["facebook","instagram","linkedin","twitter"],"service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:52","type":"competitor"}
+{"competitor":"Tech Solutions Napoli","level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:53","type":"competitor"}
+{"competitor":"Tech Solutions Napoli","errors":0,"level":"info","message":"Social media monitoring completed in 2ms","platforms":["facebook","instagram","linkedin","twitter"],"service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:53","type":"competitor"}
+{"level":"info","message":"Social media monitoring completed for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:54"}
+{"level":"info","message":"Generating weekly report","service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:54"}
+{"level":"info","message":"Starting weekly report generation","service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:54"}
+{"files":["html"],"level":"info","message":"Weekly report generated in 15ms","reportId":"weekly-2025-08-07","service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:54"}
+{"level":"info","message":"Email report sent successfully","service":"competitors-analysis-agent","timestamp":"2025-08-07 17:32:56"}
+{"competitors":3,"level":"info","message":"Analysis completed successfully in 12755ms","reportId":"weekly-2025-08-07","service":"competitors-analysis-agent","socialPosts":232,"timestamp":"2025-08-07 17:32:56","websiteChanges":0}
+{"duration":12759,"endpoint":"/analyze","level":"info","message":"POST /analyze - 200 (12759ms)","method":"POST","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 17:32:56","type":"api"}
+{"duration":0,"endpoint":"/status","level":"info","message":"GET /status - 200 (0ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 17:32:56","type":"api"}
+{"duration":0,"endpoint":"/status","level":"info","message":"GET /status - 304 (0ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:32:56","type":"api"}
+{"duration":1,"endpoint":"/reports","level":"info","message":"GET /reports - 200 (1ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-07 17:32:56","type":"api"}
+{"duration":3,"endpoint":"/status","level":"info","message":"GET /status - 304 (3ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:33:09","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:33:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:34:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:34:39","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:35:09","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:35:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:36:09","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:36:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:37:09","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:37:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:38:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:38:39","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:39:09","type":"api"}
+{"duration":5,"endpoint":"/status","level":"info","message":"GET /status - 304 (5ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:39:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:40:09","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:40:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:41:09","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:41:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:42:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:42:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:43:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:43:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:44:09","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:44:39","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:45:09","type":"api"}
+{"duration":13,"endpoint":"/status","level":"info","message":"GET /status - 304 (13ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:45:39","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:46:09","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:46:55","type":"api"}
+{"duration":5,"endpoint":"/status","level":"info","message":"GET /status - 304 (5ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:47:55","type":"api"}
+{"duration":8,"endpoint":"/status","level":"info","message":"GET /status - 304 (8ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:48:55","type":"api"}
+{"duration":13,"endpoint":"/status","level":"info","message":"GET /status - 304 (13ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:49:55","type":"api"}
+{"duration":5,"endpoint":"/status","level":"info","message":"GET /status - 304 (5ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:50:55","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:51:55","type":"api"}
+{"duration":3,"endpoint":"/status","level":"info","message":"GET /status - 304 (3ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:52:55","type":"api"}
+{"duration":5,"endpoint":"/status","level":"info","message":"GET /status - 304 (5ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:53:55","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-07 17:54:55","type":"api"}
+{"level":"info","message":"Scheduler configured for: 0 9 * * 3 (Europe/Rome)","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:50:52"}
+{"level":"info","message":"Competitors Analysis Agent started on port 3000","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:50:52"}
+{"level":"info","message":"Environment: development","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:50:52"}
+{"level":"info","message":"Schedule: 0 9 * * 3 (Europe/Rome)","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:50:52"}
+{"level":"info","message":"Next run: Wed Aug 13 2025 09:00:00 GMT+0200 (Central European Summer Time)","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:50:52"}
+{"level":"info","message":"Health check: http://localhost:3000/health","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:50:52"}
+{"level":"info","message":"Dashboard: http://localhost:3000/dashboard","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:50:52"}
+{"duration":5,"endpoint":"/dashboard","level":"info","message":"GET /dashboard - 304 (5ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 08:50:57","type":"api"}
+{"duration":9,"endpoint":"/status","level":"info","message":"GET /status - 200 (9ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-08 08:50:57","type":"api"}
+{"duration":1,"endpoint":"/competitors","level":"info","message":"GET /competitors - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 08:50:57","type":"api"}
+{"duration":6,"endpoint":"/reports","level":"info","message":"GET /reports - 304 (6ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 08:50:57","type":"api"}
+{"duration":1,"endpoint":"/favicon.ico","level":"info","message":"GET /favicon.ico - 404 (1ms)","method":"GET","service":"competitors-analysis-agent","status":404,"timestamp":"2025-08-08 08:50:57","type":"api"}
+{"level":"info","message":"Manual analysis triggered via API","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:08"}
+{"level":"info","message":"Starting competitors analysis","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:08"}
+{"level":"info","message":"Loaded 3 competitors for analysis","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:08"}
+{"level":"info","message":"Starting website monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:08"}
+{"level":"info","message":"Starting website monitoring for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:08"}
+{"competitor":"Web Agency Milano","level":"info","message":"Starting website monitoring for https://webagencymilano.it","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:08","type":"competitor"}
+{"error":"socket hang up","level":"error","message":"Website monitoring failed for Web Agency Milano","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:09"}
+{"competitor":"Digital Studio Roma","level":"info","message":"Starting website monitoring for https://digitalstudioroma.com","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:11","type":"competitor"}
+{"error":"socket hang up","level":"error","message":"Website monitoring failed for Digital Studio Roma","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:12"}
+{"competitor":"Tech Solutions Napoli","level":"info","message":"Starting website monitoring for https://techsolutionsnapoli.it","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:14","type":"competitor"}
+{"error":"socket hang up","level":"error","message":"Website monitoring failed for Tech Solutions Napoli","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:15"}
+{"level":"info","message":"Website monitoring completed for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:17"}
+{"level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:17"}
+{"level":"info","message":"Starting social media monitoring for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:17"}
+{"competitor":"Web Agency Milano","level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:17","type":"competitor"}
+{"competitor":"Web Agency Milano","errors":0,"level":"info","message":"Social media monitoring completed in 5ms","platforms":["facebook","instagram","linkedin","twitter"],"service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:17","type":"competitor"}
+{"competitor":"Digital Studio Roma","level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:18","type":"competitor"}
+{"competitor":"Digital Studio Roma","errors":0,"level":"info","message":"Social media monitoring completed in 2ms","platforms":["facebook","instagram","linkedin","twitter"],"service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:18","type":"competitor"}
+{"competitor":"Tech Solutions Napoli","level":"info","message":"Starting social media monitoring","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:19","type":"competitor"}
+{"competitor":"Tech Solutions Napoli","errors":0,"level":"info","message":"Social media monitoring completed in 2ms","platforms":["facebook","instagram","linkedin","twitter"],"service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:19","type":"competitor"}
+{"level":"info","message":"Social media monitoring completed for 3 competitors","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:20"}
+{"level":"info","message":"Generating weekly report","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:20"}
+{"level":"info","message":"Starting weekly report generation","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:20"}
+{"files":["html"],"level":"info","message":"Weekly report generated in 37ms","reportId":"weekly-2025-08-08","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:20"}
+{"level":"info","message":"Email report sent successfully","service":"competitors-analysis-agent","timestamp":"2025-08-08 08:51:21"}
+{"competitors":3,"level":"info","message":"Analysis completed successfully in 12807ms","reportId":"weekly-2025-08-08","service":"competitors-analysis-agent","socialPosts":260,"timestamp":"2025-08-08 08:51:21","websiteChanges":0}
+{"duration":12811,"endpoint":"/analyze","level":"info","message":"POST /analyze - 200 (12811ms)","method":"POST","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-08 08:51:21","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 200 (1ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-08 08:51:21","type":"api"}
+{"duration":0,"endpoint":"/status","level":"info","message":"GET /status - 304 (0ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 08:51:21","type":"api"}
+{"duration":3,"endpoint":"/reports","level":"info","message":"GET /reports - 200 (3ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-08 08:51:21","type":"api"}
+{"duration":5,"endpoint":"/reports/weekly-2025-08-08","level":"info","message":"GET /reports/weekly-2025-08-08 - 200 (5ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-08 08:51:25","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 08:51:28","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 08:51:57","type":"api"}
+{"duration":2,"endpoint":"/competitors","level":"info","message":"GET /competitors - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 08:52:04","type":"api"}
+{"duration":2,"endpoint":"/competitors","level":"info","message":"GET /competitors - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 08:52:08","type":"api"}
+{"duration":4,"endpoint":"/reports/weekly-2025-08-08","level":"info","message":"GET /reports/weekly-2025-08-08 - 200 (4ms)","method":"GET","service":"competitors-analysis-agent","status":200,"timestamp":"2025-08-08 08:52:20","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 08:52:28","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 08:52:58","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 08:53:28","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 08:53:58","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 08:54:54","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 08:55:54","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 08:56:54","type":"api"}
+{"duration":6,"endpoint":"/status","level":"info","message":"GET /status - 304 (6ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 08:57:54","type":"api"}
+{"duration":0,"endpoint":"/status","level":"info","message":"GET /status - 304 (0ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 08:58:54","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 08:59:54","type":"api"}
+{"duration":3,"endpoint":"/status","level":"info","message":"GET /status - 304 (3ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 09:00:54","type":"api"}
+{"duration":3,"endpoint":"/status","level":"info","message":"GET /status - 304 (3ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 09:01:54","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 09:02:54","type":"api"}
+{"duration":0,"endpoint":"/status","level":"info","message":"GET /status - 304 (0ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 09:03:54","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 09:04:54","type":"api"}
+{"duration":1,"endpoint":"/status","level":"info","message":"GET /status - 304 (1ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 09:05:54","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 09:06:54","type":"api"}
+{"duration":5,"endpoint":"/status","level":"info","message":"GET /status - 304 (5ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 09:07:54","type":"api"}
+{"duration":12,"endpoint":"/status","level":"info","message":"GET /status - 304 (12ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 09:08:54","type":"api"}
+{"duration":5,"endpoint":"/status","level":"info","message":"GET /status - 304 (5ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 09:09:54","type":"api"}
+{"duration":8,"endpoint":"/status","level":"info","message":"GET /status - 304 (8ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 09:10:54","type":"api"}
+{"duration":2,"endpoint":"/status","level":"info","message":"GET /status - 304 (2ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 09:11:54","type":"api"}
+{"duration":13,"endpoint":"/status","level":"info","message":"GET /status - 304 (13ms)","method":"GET","service":"competitors-analysis-agent","status":304,"timestamp":"2025-08-08 09:12:54","type":"api"}

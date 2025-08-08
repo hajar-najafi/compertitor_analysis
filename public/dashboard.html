@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competitors Analysis Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .status-bar {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 1px solid #dee2e6;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .status-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #28a745;
+        }
+
+        .status-indicator.running {
+            background: #ffc107;
+            animation: pulse 2s infinite;
+        }
+
+        .status-indicator.error {
+            background: #dc3545;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e9ecef;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+
+        .metric {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        .metric-label {
+            font-weight: 500;
+            color: #555;
+        }
+
+        .metric-value {
+            font-weight: bold;
+            color: #007bff;
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.2s;
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+
+        .btn:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+        }
+
+        .btn.danger {
+            background: #dc3545;
+        }
+
+        .btn.danger:hover {
+            background: #c82333;
+        }
+
+        .btn.success {
+            background: #28a745;
+        }
+
+        .btn.success:hover {
+            background: #218838;
+        }
+
+        .reports-list {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .report-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+            transition: background 0.2s;
+        }
+
+        .report-item:hover {
+            background: #f8f9fa;
+        }
+
+        .report-item:last-child {
+            border-bottom: none;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border: 1px solid #f5c6cb;
+        }
+
+        .success {
+            background: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border: 1px solid #c3e6cb;
+        }
+
+        @keyframes pulse {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+            .status-bar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏢 Competitors Analysis Dashboard</h1>
+            <p>Monitor your competitors' activities and generate insights</p>
+        </div>
+
+        <div class="status-bar">
+            <div class="status-item">
+                <div class="status-indicator" id="systemStatus"></div>
+                <span id="systemStatusText">Loading...</span>
+            </div>
+            <div class="status-item">
+                <span>Next Run:</span>
+                <span id="nextRun">Loading...</span>
+            </div>
+            <div class="status-item">
+                <span>Last Run:</span>
+                <span id="lastRun">Never</span>
+            </div>
+            <div class="status-item">
+                <span>Competitors:</span>
+                <span id="competitorsCount">Loading...</span>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <!-- System Status Card -->
+            <div class="card">
+                <h3>🚀 System Status</h3>
+                <div id="systemMetrics">
+                    <div class="loading">Loading system metrics...</div>
+                </div>
+                <div style="margin-top: 20px;">
+                    <button class="btn" id="runAnalysisBtn" onclick="runAnalysis()">
+                        🔄 Run Analysis Now
+                    </button>
+                    <button class="btn" onclick="refreshStatus()">
+                        🔄 Refresh Status
+                    </button>
+                </div>
+            </div>
+
+            <!-- Recent Reports Card -->
+            <div class="card">
+                <h3>📊 Recent Reports</h3>
+                <div id="reportsList">
+                    <div class="loading">Loading reports...</div>
+                </div>
+                <div style="margin-top: 20px;">
+                    <button class="btn" onclick="loadReports()">
+                        🔄 Refresh Reports
+                    </button>
+                </div>
+            </div>
+
+            <!-- Competitors Card -->
+            <div class="card">
+                <h3>🏢 Competitors</h3>
+                <div id="competitorsList">
+                    <div class="loading">Loading competitors...</div>
+                </div>
+                <div style="margin-top: 20px;">
+                    <button class="btn" onclick="loadCompetitors()">
+                        🔄 Refresh Competitors
+                    </button>
+                </div>
+            </div>
+
+            <!-- Quick Actions Card -->
+            <div class="card">
+                <h3>⚡ Quick Actions</h3>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <a href="/health" target="_blank" class="btn">🏥 Health Check</a>
+                    <a href="/status" target="_blank" class="btn">📈 System Status</a>
+                    <button class="btn" onclick="viewLogs()">📋 View Logs</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global variables
+        let isAnalysisRunning = false;
+
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', function () {
+            refreshStatus();
+            loadReports();
+            loadCompetitors();
+
+            // Auto-refresh every 30 seconds
+            setInterval(refreshStatus, 30000);
+        });
+
+        // Refresh system status
+        async function refreshStatus() {
+            try {
+                const response = await fetch('/status');
+                const data = await response.json();
+
+                updateSystemStatus(data);
+            } catch (error) {
+                console.error('Failed to fetch status:', error);
+                showError('Failed to load system status');
+            }
+        }
+
+        // Update system status display
+        function updateSystemStatus(data) {
+            const statusIndicator = document.getElementById('systemStatus');
+            const statusText = document.getElementById('systemStatusText');
+            const nextRun = document.getElementById('nextRun');
+            const lastRun = document.getElementById('lastRun');
+            const competitorsCount = document.getElementById('competitorsCount');
+            const runAnalysisBtn = document.getElementById('runAnalysisBtn');
+
+            // Update status indicator
+            if (data.isRunning) {
+                statusIndicator.className = 'status-indicator running';
+                statusText.textContent = 'Analysis Running';
+                runAnalysisBtn.disabled = true;
+                runAnalysisBtn.textContent = '⏳ Analysis in Progress...';
+            } else {
+                statusIndicator.className = 'status-indicator';
+                statusText.textContent = 'System Ready';
+                runAnalysisBtn.disabled = false;
+                runAnalysisBtn.textContent = '🔄 Run Analysis Now';
+            }
+
+            // Update other metrics
+            nextRun.textContent = data.nextRun ? new Date(data.nextRun).toLocaleString() : 'Not scheduled';
+            lastRun.textContent = data.lastRun ? new Date(data.lastRun).toLocaleString() : 'Never';
+            competitorsCount.textContent = data.competitors || 0;
+
+            // Update system metrics
+            updateSystemMetrics(data);
+        }
+
+        // Update system metrics
+        function updateSystemMetrics(data) {
+            const metricsContainer = document.getElementById('systemMetrics');
+
+            metricsContainer.innerHTML = `
+                <div class="metric">
+                    <span class="metric-label">Status:</span>
+                    <span class="metric-value">${data.isRunning ? 'Running' : 'Ready'}</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Competitors:</span>
+                    <span class="metric-value">${data.competitors || 0}</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Schedule:</span>
+                    <span class="metric-value">${data.config?.schedule || 'Not set'}</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Timezone:</span>
+                    <span class="metric-value">${data.config?.timezone || 'UTC'}</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Email Reports:</span>
+                    <span class="metric-value">${data.config?.emailEnabled ? 'Enabled' : 'Disabled'}</span>
+                </div>
+            `;
+        }
+
+        // Run analysis
+        async function runAnalysis() {
+            if (isAnalysisRunning) return;
+
+            isAnalysisRunning = true;
+            const btn = document.getElementById('runAnalysisBtn');
+            btn.disabled = true;
+            btn.textContent = '⏳ Starting Analysis...';
+
+            try {
+                const response = await fetch('/analyze', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    showSuccess(`Analysis completed successfully! Generated report: ${result.reportId}`);
+                    refreshStatus();
+                    loadReports();
+                } else {
+                    showError(`Analysis failed: ${result.error}`);
+                }
+            } catch (error) {
+                console.error('Analysis error:', error);
+                showError('Failed to start analysis');
+            } finally {
+                isAnalysisRunning = false;
+                refreshStatus();
+            }
+        }
+
+        // Load reports
+        async function loadReports() {
+            try {
+                const response = await fetch('/reports');
+                const reports = await response.json();
+
+                const reportsContainer = document.getElementById('reportsList');
+
+                if (reports.length === 0) {
+                    reportsContainer.innerHTML = '<div class="loading">No reports found</div>';
+                    return;
+                }
+
+                reportsContainer.innerHTML = `
+                    <div class="reports-list">
+                        ${reports.slice(0, 5).map(report => `
+                            <div class="report-item">
+                                <div>
+                                    <strong>${report.id}</strong><br>
+                                    <small>${new Date(report.modified).toLocaleString()}</small>
+                                </div>
+                                <a href="/reports/${report.id}" class="btn" download>
+                                    📥 Download
+                                </a>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            } catch (error) {
+                console.error('Failed to load reports:', error);
+                document.getElementById('reportsList').innerHTML = '<div class="error">Failed to load reports</div>';
+            }
+        }
+
+        // Load competitors
+        async function loadCompetitors() {
+            try {
+                const response = await fetch('/competitors');
+                const competitors = await response.json();
+
+                const competitorsContainer = document.getElementById('competitorsList');
+
+                if (competitors.length === 0) {
+                    competitorsContainer.innerHTML = '<div class="loading">No competitors configured</div>';
+                    return;
+                }
+
+                competitorsContainer.innerHTML = `
+                    <div class="reports-list">
+                        ${competitors.slice(0, 5).map(competitor => `
+                            <div class="report-item">
+                                <div>
+                                    <strong>${competitor.name}</strong><br>
+                                    <small>${competitor.website}</small>
+                                </div>
+                                <span class="metric-value">${competitor.monitoring?.enabled ? '✅' : '❌'}</span>
+                            </div>
+                        `).join('')}
+                        ${competitors.length > 5 ? `<div style="text-align: center; padding: 10px; color: #666;">+${competitors.length - 5} more</div>` : ''}
+                    </div>
+                `;
+            } catch (error) {
+                console.error('Failed to load competitors:', error);
+                document.getElementById('competitorsList').innerHTML = '<div class="error">Failed to load competitors</div>';
+            }
+        }
+
+        // Show error message
+        function showError(message) {
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'error';
+            errorDiv.textContent = message;
+            document.querySelector('.container').insertBefore(errorDiv, document.querySelector('.dashboard-grid'));
+
+            setTimeout(() => {
+                errorDiv.remove();
+            }, 5000);
+        }
+
+        // Show success message
+        function showSuccess(message) {
+            const successDiv = document.createElement('div');
+            successDiv.className = 'success';
+            successDiv.textContent = message;
+            document.querySelector('.container').insertBefore(successDiv, document.querySelector('.dashboard-grid'));
+
+            setTimeout(() => {
+                successDiv.remove();
+            }, 5000);
+        }
+
+        // View logs (placeholder)
+        function viewLogs() {
+            alert('Log viewing feature will be implemented in future versions. Check the logs directory for log files.');
+        }
+    </script>
+</body>
+
+</html>
