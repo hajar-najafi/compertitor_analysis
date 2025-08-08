@@ -33,7 +33,7 @@ class ReportGenerator {
     try {
       const reportId = this.generateReportId();
       const reportDate = new Date();
-      
+
       // Process and analyze data
       const processedData = this.processData(data);
       const insights = this.generateInsights(processedData);
@@ -56,11 +56,11 @@ class ReportGenerator {
 
       // Generate different report formats
       const reports = {};
-      
+
       if (config.reports.format === 'html' || config.reports.format === 'all') {
         reports.html = await this.generateHTMLReport(reportData);
       }
-      
+
       if (config.reports.format === 'json' || config.reports.format === 'all') {
         reports.json = await this.generateJSONReport(reportData);
       }
@@ -98,7 +98,6 @@ class ReportGenerator {
     const processed = {
       competitors: [],
       websiteChanges: [],
-      socialMediaActivity: [],
       priceChanges: [],
       seoMetrics: [],
       summary: {}
@@ -124,16 +123,7 @@ class ReportGenerator {
       });
     }
 
-    // Process social media data
-    if (data.socialMediaMonitoring) {
-      data.socialMediaMonitoring.forEach(result => {
-        processed.socialMediaActivity.push({
-          competitor: result.competitor,
-          platforms: result.platforms,
-          summary: result.summary
-        });
-      });
-    }
+
 
     // Process price monitoring data (if available)
     if (data.priceMonitoring) {
@@ -171,19 +161,7 @@ class ReportGenerator {
       });
     }
 
-    // Social media insights
-    if (processedData.socialMediaActivity.length > 0) {
-      const totalPosts = processedData.socialMediaActivity.reduce((sum, item) => sum + item.summary.totalPosts, 0);
-      const totalEngagement = processedData.socialMediaActivity.reduce((sum, item) => sum + item.summary.totalEngagement, 0);
-      
-      insights.push({
-        type: 'social',
-        title: 'Active Social Media Presence',
-        description: `${totalPosts} new social media posts with ${totalEngagement} total engagement`,
-        severity: totalEngagement > 1000 ? 'high' : 'medium',
-        metrics: { posts: totalPosts, engagement: totalEngagement }
-      });
-    }
+
 
     // Competitive analysis insights
     const topCompetitors = this.identifyTopCompetitors(processedData);
@@ -219,14 +197,7 @@ class ReportGenerator {
           });
           break;
 
-        case 'social':
-          recommendations.push({
-            title: 'Increase Social Media Activity',
-            description: 'Competitors are very active on social media. Consider increasing your posting frequency.',
-            priority: 'medium',
-            action: 'Plan more social media content'
-          });
-          break;
+
 
         case 'competitive':
           recommendations.push({
@@ -258,16 +229,11 @@ class ReportGenerator {
   generateSummaryStats(processedData) {
     const totalCompetitors = processedData.competitors.length;
     const totalWebsiteChanges = processedData.websiteChanges.reduce((sum, item) => sum + item.changes.length, 0);
-    const totalSocialPosts = processedData.socialMediaActivity.reduce((sum, item) => sum + item.summary.totalPosts, 0);
-    const totalEngagement = processedData.socialMediaActivity.reduce((sum, item) => sum + item.summary.totalEngagement, 0);
 
     return {
       totalCompetitors,
       totalWebsiteChanges,
-      totalSocialPosts,
-      totalEngagement,
-      averageEngagement: totalSocialPosts > 0 ? Math.round(totalEngagement / totalSocialPosts) : 0,
-      activeCompetitors: processedData.competitors.filter(c => c.changes > 0 || c.socialActivity > 0).length
+      activeCompetitors: processedData.competitors.filter(c => c.changes > 0).length
     };
   }
 
@@ -278,14 +244,10 @@ class ReportGenerator {
    */
   identifyTopCompetitors(processedData) {
     const competitors = processedData.competitors.map(comp => {
-      const socialData = processedData.socialMediaActivity.find(s => s.competitor === comp.name);
-      const engagement = socialData ? socialData.summary.totalEngagement : 0;
-      
       return {
         name: comp.name,
         websiteChanges: comp.changes,
-        socialEngagement: engagement,
-        totalActivity: comp.changes + engagement
+        totalActivity: comp.changes
       };
     });
 
@@ -380,12 +342,8 @@ class ReportGenerator {
                     <p>{{metadata.totalChanges}}</p>
                 </div>
                 <div class="summary-item">
-                    <h3>Social Media Posts</h3>
-                    <p>{{summary.totalSocialPosts}}</p>
-                </div>
-                <div class="summary-item">
-                    <h3>Total Engagement</h3>
-                    <p>{{summary.totalEngagement}}</p>
+                    <h3>Active Competitors</h3>
+                    <p>{{summary.activeCompetitors}}</p>
                 </div>
             </div>
         </div>
@@ -451,7 +409,7 @@ class ReportGenerator {
     for (const [format, content] of Object.entries(reports)) {
       const filename = `competitors-report-${reportId}.${format}`;
       const filepath = path.join(this.reportsDir, filename);
-      
+
       await fs.writeFile(filepath, content);
       savedFiles[format] = filepath;
     }
@@ -476,7 +434,7 @@ class ReportGenerator {
     const now = moment();
     const weekStart = now.clone().startOf('week');
     const weekEnd = now.clone().endOf('week');
-    
+
     return `${weekStart.format('MMM DD')} - ${weekEnd.format('MMM DD, YYYY')}`;
   }
 
@@ -487,15 +445,11 @@ class ReportGenerator {
    */
   countTotalChanges(processedData) {
     let total = 0;
-    
+
     if (processedData.websiteChanges) {
       total += processedData.websiteChanges.reduce((sum, item) => sum + item.changes.length, 0);
     }
-    
-    if (processedData.socialMediaActivity) {
-      total += processedData.socialMediaActivity.reduce((sum, item) => sum + item.summary.newPosts, 0);
-    }
-    
+
     return total;
   }
 
@@ -505,9 +459,7 @@ class ReportGenerator {
    * @returns {number} Total engagement
    */
   calculateTotalEngagement(processedData) {
-    if (!processedData.socialMediaActivity) return 0;
-    
-    return processedData.socialMediaActivity.reduce((sum, item) => sum + item.summary.totalEngagement, 0);
+    return 0;
   }
 
   /**
@@ -519,18 +471,17 @@ class ReportGenerator {
     return {
       totalCompetitors: processedData.competitors.length,
       websiteChanges: this.countTotalChanges(processedData),
-      socialMediaPosts: processedData.socialMediaActivity.reduce((sum, item) => sum + item.summary.totalPosts, 0),
       totalEngagement: this.calculateTotalEngagement(processedData)
     };
   }
 }
 
 // Register Handlebars helpers
-Handlebars.registerHelper('formatDate', function(dateString) {
+Handlebars.registerHelper('formatDate', function (dateString) {
   return moment(dateString).format('MMMM DD, YYYY HH:mm');
 });
 
-Handlebars.registerHelper('eq', function(a, b) {
+Handlebars.registerHelper('eq', function (a, b) {
   return a === b;
 });
 

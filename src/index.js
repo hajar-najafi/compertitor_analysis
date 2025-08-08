@@ -9,7 +9,6 @@ const logger = require('./utils/logger');
 
 // Import services
 const WebsiteMonitor = require('./services/websiteMonitor');
-const SocialMediaMonitor = require('./services/socialMediaMonitor');
 const ReportGenerator = require('./services/reportGenerator');
 
 // Import data loader
@@ -19,7 +18,6 @@ class CompetitorsAnalysisAgent {
   constructor() {
     this.app = express();
     this.websiteMonitor = new WebsiteMonitor();
-    this.socialMediaMonitor = new SocialMediaMonitor();
     this.reportGenerator = new ReportGenerator();
     this.competitorsLoader = new CompetitorsLoader();
 
@@ -202,7 +200,6 @@ class CompetitorsAnalysisAgent {
       // Run monitoring services
       const results = {
         websiteMonitoring: [],
-        socialMediaMonitoring: [],
         priceMonitoring: [],
         seoMonitoring: []
       };
@@ -210,10 +207,6 @@ class CompetitorsAnalysisAgent {
       // Website monitoring
       logger.info('Starting website monitoring');
       results.websiteMonitoring = await this.websiteMonitor.monitorAll(competitors);
-
-      // Social media monitoring
-      logger.info('Starting social media monitoring');
-      results.socialMediaMonitoring = await this.socialMediaMonitor.monitorAll(competitors);
 
       // Generate report
       logger.info('Generating weekly report');
@@ -230,7 +223,6 @@ class CompetitorsAnalysisAgent {
       logger.info(`Analysis completed successfully in ${duration}ms`, {
         competitors: competitors.length,
         websiteChanges: results.websiteMonitoring.reduce((sum, r) => sum + r.changes.length, 0),
-        socialPosts: results.socialMediaMonitoring.reduce((sum, r) => sum + r.summary.totalPosts, 0),
         reportId: reportResult.reportId
       });
 
